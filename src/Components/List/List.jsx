@@ -23,7 +23,7 @@ function List() {
         variant="danger"
         onClick={() => {
           localStorage.clear();
-          window.location.replace('/login');
+          window.location.replace('/');
         }}
       >
         Logout

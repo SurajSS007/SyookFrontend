@@ -8,7 +8,7 @@ export default function Routing() {
         <div>
         <Router>
         <div >
-            <Route path="/login" exact component={Login} />
+            <Route path="/" exact component={Login} />
             <ProtectedRoute path="/list" isAuth={localStorage.getItem('isLogin')} exact component={List} />
         </div>
     </Router>

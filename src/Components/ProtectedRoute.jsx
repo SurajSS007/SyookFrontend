@@ -6,7 +6,7 @@ function ProtectedRoute({ isAuth, render: Component, ...rest }) {
         if (localStorage.getItem('isLogin')) {
             return <Component {...prop} />;
         } else {
-            return <Redirect to={{ pathname: "/login", state: { from: prop.location} }} />
+            return <Redirect to={{ pathname: "/", state: { from: prop.location} }} />
         }
     }} />;
 }
